@@ -1,0 +1,12 @@
+<% content_for :title do %>Event<% end %>
+<h3>Event</h3>
+<div class="form">
+	<%= simple_form_for @event do |form| %>
+	<%= form.error_notification %>
+	<%= form.input :name, autofocus: true %>
+	<%= form.input :date %>
+	<%= form.input :timestart %>
+	<%= form.input :timeend %>
+	<%= form.button :submit, 'Submit', class: 'submit' %>
+	<% end %>
+</div>
